@@ -1,0 +1,11 @@
+/.metadata/
+/.recommenders/
+/.settings/
+*.project
+*.classpath
+/target/
+/*.project
+/*.classpath
+**/.settings/
+**/target/
+**/bin/

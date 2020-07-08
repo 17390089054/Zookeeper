@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.wrf.curator</groupId>
+  <artifactId>apache-curator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>apache-curator</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- 对zookeeper的底层api的一些封装 -->
+   <dependency>
+	   <groupId>org.apache.curator</groupId>
+	   <artifactId>curator-framework</artifactId>
+	   <version>2.8.0</version>
+	</dependency>
+	
+	<!-- 封装了一些高级特性，如：Cache事件监听、选举、分布式锁、分布式Barrier -->
+	<dependency>
+	   <groupId>org.apache.curator</groupId>
+	   <artifactId>curator-recipes</artifactId>
+	   <version>2.8.0</version>
+	</dependency>
+	
+	<!-- 加入sl4j的核心API -->
+  	<dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <!-- slfj2静态绑定log4j12的桥接包 -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.7.25</version>
+        <!-- <scope>test</scope> -->
+    </dependency>
+     <!-- 实际的日志实现 log4j的依赖-->
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.16</version>
+    </dependency>
+
+
+  </dependencies>
+</project>
